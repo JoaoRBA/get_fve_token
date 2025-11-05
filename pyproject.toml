@@ -1,0 +1,24 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "get_fve_token"
+version = "0.1.0"
+description = "Cliente interno para extrair tokens por e-mail via Microsoft Graph (Application)"
+authors = [{ name = "RBA Tech", email = "ti@ramosbenedetti.adv.br" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "requests>=2.31.0",
+  "msal>=1.27.0",
+  "beautifulsoup4>=4.12.3",
+  "python-dotenv >= 1.0.1"
+]
+
+[project.urls]
+Repository = "https://github.com/JoaoRBA/get_fve_token"
+
+[tool.setuptools.packages.find]
+include = ["get_fve_token"]
